@@ -1,89 +1,41 @@
-fIf an outsourcing company is showcasing their API test automation tool, a good way to challenge them is by asking pointed, practical, and technically informed questions. This will help you separate marketing talk from real value. Here are areas you can use to probe:
+Of course — here’s a polished and professional rewrite of your response (from the second screenshot). I’ve kept your key points and intent intact while improving tone, flow, and clarity:
 
 
 ---
 
-🔍 Coverage & Flexibility
+Subject: Re: Performance Testing Feedback
 
-Protocols & Formats: Does it only handle REST/JSON, or also SOAP, GraphQL, gRPC, XML, message queues (Kafka, RabbitMQ)?
+Hi Ula,
 
-Authentication: How does it support OAuth2, JWT, SAML, client certificates, or custom tokens?
+Thank you for sharing your feedback. I appreciate your observations and would like to clarify a few points regarding our scope of work and responsibilities.
 
-Versioning: How does it handle API versioning without breaking existing tests?
+Our team, ITSS Performance Test Team, is responsible specifically for backend performance testing in NavAnomaly, not for the entire performance testing or full coordination across all components. That said, I agree that we can improve several aspects going forward, and I would like to address your comments point by point below.
 
-
-
----
-
-⚙️ Integration & Maintenance
-
-CI/CD Integration: Can it plug into Jenkins, GitHub Actions, GitLab CI, Azure DevOps pipelines without friction?
-
-Source Control: How are test cases stored—code, config files, or in a proprietary format? (Watch out for vendor lock-in).
-
-Scalability: Can tests run in parallel at scale (thousands of requests) to simulate realistic load?
+1. Scope and Ownership
+Our team is handling the backend performance test only. Since our resources are shared across multiple development projects, we are not dedicated solely to NavAnomaly. The official request for backend testing was raised on July 14th in JIRA (INPR-572 by Adam Ramainski). We were not assigned ownership of the entire performance testing process but only for the backend part. This is why we rely on knowledgeable stakeholders across the system to collaborate effectively and ensure proper test execution.
 
 
+2. Documentation
+All documentation related to NavAnomaly performance testing is maintained in Confluence: Performance Testing Documentation. As discussed earlier, Leonid will also prepare a summary of his part for the next Friday meeting to make the progress more transparent.
 
----
 
-🧪 Test Design & Maintainability
+3. Status and Progress Updates
+From the start of our engagement, the backend performance tests have been executed as planned and communicated during our status meetings. The latest results will be presented to the Systems team tomorrow and to the Business team on Friday. The UI performance testing, however, is managed separately by testers assigned full-time to NavAnomaly (e.g., Michal Rokoszka’s team).
 
-Data-driven testing: Can test cases be parameterized with external data (CSV, DB, Excel, APIs)?
 
-Assertions: How flexible is validation? JSONPath, XPath, regex, custom scripts?
-
-Maintainability: What happens if response payloads change slightly? Are tests brittle or resilient?
+4. Knowledge and Support
+During the preparation phase, we requested additional support to help address certain system-level questions raised by Leonid. Unfortunately, the only available SME, Raghu, was unavailable in July and August due to other project commitments. Once he returned in September, we finalized and executed the tests as planned, with results shared in the meetings you organized.
 
 
 
----
+To summarize, I regret that this situation has caused concern, and I fully agree that better coordination and communication would help moving forward—especially as we prepare to scale our design load testing from 1,000 to 100,000 funds next year. Given the system’s complexity, proper coordination remains essential. However, since our IT Shared Services team supports multiple projects, detailed coordination of all test types—including performance tests—should ideally be managed by full-time project testers assigned specifically to NavAnomaly.
 
-📊 Reporting & Analytics
+We remain committed to collaborating closely and ensuring smoother alignment in the future.
 
-Reports: Do they generate actionable reports for both technical and non-technical stakeholders?
-
-Defect Traceability: Can it integrate with JIRA, Azure DevOps, or other issue trackers?
-
-Metrics: Does it provide coverage metrics, trend analysis, flaky test detection?
-
+Kind regards,
+Rafal
 
 
 ---
 
-🛡️ Cost & Risk
-
-Vendor Lock-in: Are tests portable (exportable to open-source frameworks like REST Assured, Postman/Newman, Karate)?
-
-Skill Requirement: Do testers need programming knowledge, or is it only no-code? What’s the trade-off?
-
-Support for Standards: Is it built on top of open-source libraries, or completely proprietary?
-
-
-
----
-
-🚨 “Challenge” Questions to Put Them on the Spot
-
-1. "How does your tool handle dynamic values, like correlation of authentication tokens across multiple requests?"
-
-
-2. "If our API returns an additional field tomorrow, will our tests break?"
-
-
-3. "Can we migrate our tests from your tool to an open-source framework if we decide to stop using it?"
-
-
-4. "Show us how quickly you can create and run a regression suite for 20 endpoints with authentication and parameterized data."
-
-
-5. "How does your tool scale when running thousands of requests in parallel—can you demo that?"
-
-
-
-
----
-
-Would you like me to prepare a list of tough demo scenarios you can ask them to perform live, so you can see if their tool works beyond the sales pitch?
-
-fg
+Would you like me to make it slightly firmer (to emphasize boundaries and accountability more strongly), or keep it neutral and diplomatic as above?
